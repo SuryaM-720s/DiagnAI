@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiagnAI - Authentication</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Gloock&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Side -->
+        <div class="logo-side">
+            <img src="../Images/DiagnAI.png" alt="DiagnAI Logo" class="logo-img">
+        </div>
+        
+        <!-- Authentication Side -->
+        <div class="auth-side">
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+                <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form" class="auth-form" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer with Team Members and Social Links -->
+    <footer>
+        <div class="team-members">
+            <div class="team-member">
+                <p>Surya</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/suryaprakash-m7" target="_blank">
+                        <img src="../Images/LinkedIn_logo.png" alt="LinkedIn" class="social-logo">
+                    </a>
+                    <a href="https://github.com/SuryaM-720s" target="_blank">
+                        <img src="../Images/GitHub_logo.png" alt="GitHub" class="social-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="team-member">
+                <p>Varun</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/varun-ahlawat/" target="_blank">
+                        <img src="../Images/LinkedIn_logo.png" alt="LinkedIn" class="social-logo">
+                    </a>
+                    <a href="https://github.com/yup-VARUN" target="_blank">
+                        <img src="../Images/GitHub_logo.png" alt="GitHub" class="social-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="team-member">
+                <p>Sufyaan</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shaik-mohammed-sufyaan/" target="_blank">
+                        <img src="../Images/LinkedIn_logo.png" alt="LinkedIn" class="social-logo">
+                    </a>
+                    <a href="https://github.com/Shaik-sufyaan" target="_blank">
+                        <img src="../Images/GitHub_logo.png" alt="GitHub" class="social-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 DiagnAI. All rights reserved.</p>
+    </footer>
+
+    <script src="../static/index.js"></script>
+</body>
+</html>
